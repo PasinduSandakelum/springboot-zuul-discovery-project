@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+zuul:
+  routes:
+    sample1:
+      path: /sample1/**
+      serviceId: sample-service1
+#      url : http://localhost:8081/api
+    sample2:
+      path: /sample2/**
+      serviceId: sample-service2
+#      url: http://localhost:8082/api
